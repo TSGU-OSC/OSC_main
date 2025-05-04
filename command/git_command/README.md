@@ -72,18 +72,46 @@ git log
 ```
 git status
 ```
+获取本地分支最新哈希值
+```
+git rev-parse HEAD
+```
+获取远程分支最新哈希值
+```
+git rev-parse origin/<commit_id>
+```
+查看远程仓库及其URL地址
+```
+git remote -v
+```
+更改远程仓库地址
+```
+git remote set-url origin <new_address>
+```
+删除现有的远程仓库
+```
+git remote remove origin
+```
+添加新的远程仓库
+```
+git remote add origin <new_address>
+```
 代码回滚
 ```
 git reset --hard <commit_id>
 ```
 使远程仓库回滚生效
 ```
-git push orgin main --force
+git push origin main --force
 ```
 
 ### 查看可用分支
 ```
 git branch
+```
+查看所有分支
+```
+git branch -a
 ```
 ### 切换到可用分支
 ```
